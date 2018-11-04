@@ -8,15 +8,14 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
-    password: root
+    password: Chrome@123
     initialSize: 1
     minIdle: 3
     maxActive: 20
     # 配置获取连接等待超时的时间
-    maxWait: 60000
-    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    maxWait: 隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
     timeBetweenEvictionRunsMillis: 60000
     # 配置一个连接在池中最小生存的时间，单位是毫秒
     minEvictableIdleTimeMillis: 30000
